@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="rezume.css">
+</head> 
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Vladislav Kanash</h1>
+            <img src="resume.jpg" alt="I'm in the photo" class="avatar">
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code-example">Code Example</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education & English Level</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Основное содержание -->
+        <main>
+            <!-- О себе -->
+            <section id="about-me">
+                <h2>About Me</h2>
+                <p>A motivated and detail-oriented professional with experience in web development and a strong interest in expanding technical expertise. Always eager to learn and take on new challenges.</p>
+            </section>
+
+            <!-- Контакты -->
+            <section id="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li>Email: Ubisoftlife@mail.ru</li>
+                    <li>Phone: +375 (29) 862-28-78</li>
+                    <li>VKontake: <a href="https://vk.com/wladstail" target="_blank">wladstail</a></li>
+                    <li>GitHub: <a href="https://github.com/wladstail" target="_blank">github.com/wladstail</a></li>
+                </ul>
+            </section>
+
+            <!-- Навыки -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML & CSS (Responsive Design)</li>
+                    <li>JavaScript & jQuery</li>
+                    <li>Version Control (Git)</li>
+                    <li>Basic knowledge of C++</li>
+                </ul>
+            </section>
+
+            <!-- Пример кода -->
+            <section id="code-example">
+                <h2>Code Example</h2>
+                <pre>
+<code>
+    // Example code in C++
+#include &lt;iostream&gt;
+int main() {
+    std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
+    return 0;
+}
+</code>
+                </pre>
+            </section>
+            <!-- Проекты -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="https://github.com/wladstail/CounterStrike" target="_blank">Project 1</a> - A game created in C++ on the Unreal Engine 5 game engine.</li>
+                    <li><a href="https://github.com/wladstail/LearnCode" target="_blank">Project 2</a> - The second game created in C++ on the Unreal Engine 5 game engine.</li>
+                </ul>
+            </section>
+
+            <!-- Образование и уровень английского -->
+            <section id="education">
+                <h2>Education & English Level</h2>
+                <p>Information technology software programmer</p>
+                <p>English Level: Low</p>
+            </section>
+        </main>
+
+        <!-- Нижний колонтитул -->
+        <footer>
+            <p>&copy; <span id="year"></span> October - <a href="https://github.com/wladstail" target="_blank">GitHub Profile</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Автоматически добавляем текущий год в футер
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
